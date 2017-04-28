@@ -16,5 +16,5 @@ class User < ApplicationRecord
    def quit!(group)
      participated_groups.delete(group)
    end
-
+   has_many :posts
 end
